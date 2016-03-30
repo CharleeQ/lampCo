@@ -1,0 +1,377 @@
+/* San Francisco Semibold */
+@font-face {
+  font-family: 'SFSemiboldE';
+  src: url('../fonts/SanFrancisco/Semibold/SF-UI-Text-Semibold.eot');
+  src: url('../fonts/SanFrancisco/Semibold/SF-UI-Text-Semibold.woff2') format('woff2'),
+       url('../fonts/SanFrancisco/Semibold/SF-UI-Text-Semibold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFSemiboldW';
+  src: url('../fonts/SanFrancisco/Semibold/SFUIText-Semibold.woff') format('woff'),
+       url('../fonts/SanFrancisco/Semibold/SFUIText-Semibold.ttf') format('truetype'),
+       url('../fonts/SanFrancisco/Semibold/SFUIText-Semibold.svg#SFUIText-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* San Francisco Regular */
+@font-face {
+  font-family: 'SFRegularE';
+  src: url('../fonts/SanFrancisco/Regular/SF-UI-Text-Regular.eot');
+  src: url('../fonts/SanFrancisco/Regular/SF-UI-Text-Regular.woff2') format('woff2'),
+       url('../fonts/SanFrancisco/Regular/SF-UI-Text-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFRegularW';
+  src: url('../fonts/SanFrancisco/Regular/SFUIText-Regular.woff') format('woff'),
+       url('../fonts/SanFrancisco/Regular/SFUIText-Regular.ttf') format('truetype'),
+       url('../fonts/SanFrancisco/Regular/SFUIText-Regular.svg#SFUIText-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* San Francisco Medium */
+@font-face {
+  font-family: 'SFMediumE';
+  src: url('../fonts/SanFrancisco/Medium/SF-UI-Text-Medium.eot');
+  src: url('../fonts/SanFrancisco/Medium/SF-UI-Text-Medium.woff2') format('woff2'),
+       url('../fonts/SanFrancisco/Medium/SF-UI-Text-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFMediumW';
+  src: url('../fonts/SanFrancisco/Medium/SFUIText-Medium.woff') format('woff'),
+       url('../fonts/SanFrancisco/Medium/SFUIText-Medium.ttf') format('truetype'),
+       url('../fonts/SanFrancisco/Medium/SFUIText-Medium.svg#SFUIText-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* San Francisco Light */
+@font-face {
+  font-family: 'SFLightE';
+  src: url('../fonts/SanFrancisco/Light/SF-UI-Text-Light.eot');
+  src: url('../fonts/SanFrancisco/Light/SF-UI-Text-Light.woff2') format('woff2'),
+       url('../fonts/SanFrancisco/Light/SF-UI-Text-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFLightW';
+  src: url('../fonts/SanFrancisco/Light/SFUIText-Light.woff') format('woff'),
+       url('../fonts/SanFrancisco/Light/SFUIText-Light.ttf') format('truetype'),
+       url('../fonts/SanFrancisco/Light/SFUIText-Light.svg#SFUIText-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* San Francisco Bold */
+@font-face {
+  font-family: 'SFBoldE';
+  src: url('../fonts/SanFrancisco/Bold/SF-UI-Text-Bold.eot');
+  src: url('../fonts/SanFrancisco/Bold/SF-UI-Text-Bold.woff2') format('woff2'),
+       url('../fonts/SanFrancisco/Bold/SF-UI-Text-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFBoldW';
+  src: url('../fonts/SanFrancisco/Bold/SFUIText-Bold.woff') format('woff'),
+       url('../fonts/SanFrancisco/Bold/SFUIText-Bold.ttf') format('truetype'),
+       url('../fonts/SanFrancisco/Bold/SFUIText-Bold.svg#SFUIText-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'SFRegularW', 'SFRegularE', Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+	z-index: 1;
+    list-style: none;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: block;
+    margin-right: auto;
+    text-decoration: none;  
+}
+
+ul.menu > li > a:last-child {
+    margin-right: 0;
+    box-shadow: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 0;
+    box-shadow: 0px 0px 5px rgba(119, 119, 119, 1);
+}
+
+ul.submenu > li {
+    display: block;
+}
+
+ul.submenu > li > a {
+    font-family: 'SFLightW', 'SFLightE', Arial, sans-serif;
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 35px;
+}
+
+ul.submenu > li > a:hover {
+    text-decoration: none;
+    font-family: 'SFMediumE', 'SFMediumW', Arial, sans-serif;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+    background-color: #e2e2e2;
+}
+
+.top_headline span {
+    float: right;
+}
+
+.top_headline b {
+    color: white;
+}
+
+.top_headline {
+    color: #b2b2b2;
+    font-size: 18px;
+    background-image: url(../img/top_headline.png);
+    background-position: center;
+    height: 94px;
+    padding-left: 55px;
+    padding-top: 3px;
+    padding-right: 55px;
+}
+
+.bottom_headline {
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    width: auto;
+    border-bottom: 1px solid rgba(119, 119, 119, .1);;
+}
+
+.righted {
+    float: right;
+}
+.logo {
+    background-image: url(../img/logo_min.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 44px;
+}
+
+aligned {
+    margin-top: 25px;
+}
+
+.bottom_headline:hover {
+    color: #1b86d8;
+    text-decoration: none;
+}
+
+.shadows:hover {
+    box-shadow:  0px 0px 5px rgba(119, 119, 119, 1);   
+}
+
+footer {
+    font-family: 'SFLightE', 'SFLightW', Arial, sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'SFBoldE', 'SFBoldW', Arial, sans-serif;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'SFSemiboldE', 'SFSemiboldW', Arial, sans-serif;
+    font-size: 30px;
+    padding-left: 155px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: 'SFRegularE', 'SFRegularW', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.acc {
+    background-color: white;
+    margin-left: 15px;
+    padding: 1px 25px;
+    padding-bottom: 70px;
+    background-image: url(../img/accbg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px #b2b2b2;
+}
+
+.mobile_internet .btn {
+    bottom: 15px;
+}
+
+.hot_btns {
+    position: relative;
+    margin-left: 15px;
+}
+
+.btn {
+    position: absolute;
+    right: 40px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #1b86d8;
+    border: 2px solid #1b86d8;
+    border-radius: 30px;
+    font-family: "SFSemiBoldE";
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 30px;
+    width: auto;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.btn:hover {
+    background-color: #1b86d8;
+    color: #fff;
+}
+
+.mobile_internet {
+    background-color: white;
+    padding: 1px 20px;
+    padding-bottom: 90px;
+    background-image: url(../img/internetbg.png);
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px #b2b2b2;
+}
+
+.small_banner {
+    text-align: center;
+    margin-right: 15px;
+    height: 450px;
+    line-height: 0;
+    background-image: url(../img/kfc.png);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px #b2b2b2;
+}
+
+.small_banner h3 {
+    font-family: 'SFBoldE', 'SFBoldW', Arial, sans-serif;    
+}
+
+.small_banner p {
+    font-family: 'SFLightE', 'SFLightW', Arial, sans-serif;
+}
+
+.small_banner p, .small_banner h3 {
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+.small_banner .btn {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 10px;
+    right: 55px;
+    top: 380px;
+}
+
+.small_banner .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.antenna {
+    background-image: url(../img/antenna.png);
+    height: 84px;
+    width: 75px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.antenna:hover {
+    opacity: 0.6; 
+}
+
+/* Карусель (Слайдер) */
+.item{
+    background: #333;    
+    text-align: center;
+    height: 450px;
+}
+
+.carousel {
+    margin-top: -10px;
+    z-index: 0;
+}
+
+.slide2_img {
+    background-image: url(../img/world-of-tanks-wot-wargaming-1235.jpg);
+    background-position: center;
+}
+
+.slide1_img {
+    background-image: url(../img/iPhone.png);
+    background-position: center;
+}
+
+.carousel-caption p {
+    font-family: 'SFLightE', 'SFLightW', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.header-full-width { padding-left: 0px; padding-right:0px;}
+
