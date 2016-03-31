@@ -102,66 +102,73 @@ body {
 }
 
 ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  z-index: 1;
+}
+
+ul li {
+  font-family: 'SFRegularE', Arial, sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  background: #f2f2f2;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul li:hover ul {
     display: block;
-    margin: 0;
-    padding: 0;
-	z-index: 1;
-    list-style: none;
+    visibility: visible;     
 }
 
-ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
+ul li:hover {
+  background: #f2f2f2;
+  color: #337ab7;
 }
 
-ul.menu > li {
-    float: left;
-    position: relative;
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
 }
 
-ul.menu > li > a {
-    display: block;
-    margin-right: auto;
-    text-decoration: none;  
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
 }
 
-ul.menu > li > a:last-child {
-    margin-right: 0;
-    box-shadow: none;
+.slider {
+    margin-top: 10px;
 }
 
-ul.submenu {
-    display: none;
-    position: absolute;
-    width: 250px;
-    top: 40px;
-    left: 0;
-    box-shadow: 0px 0px 5px rgba(119, 119, 119, 1);
-}
-
-ul.submenu > li {
-    display: block;
-}
-
-ul.submenu > li > a {
-    font-family: 'SFLightW', 'SFLightE', Arial, sans-serif;
-    display: block;
-    padding: 7px;
-    text-decoration: none;
-    text-align: left;
-    padding-left: 35px;
-}
-
-ul.submenu > li > a:hover {
-    text-decoration: none;
-    font-family: 'SFMediumE', 'SFMediumW', Arial, sans-serif;
-}
-
-ul.menu > li:hover > ul.submenu {
-    display: block;
-    background-color: #e2e2e2;
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
 }
 
 .top_headline span {
@@ -179,7 +186,6 @@ ul.menu > li:hover > ul.submenu {
     background-position: center;
     height: 94px;
     padding-left: 55px;
-    padding-top: 3px;
     padding-right: 55px;
 }
 
@@ -198,6 +204,7 @@ ul.menu > li:hover > ul.submenu {
 .righted {
     float: right;
 }
+
 .logo {
     background-image: url(../img/logo_min.png);
     background-repeat: no-repeat;
